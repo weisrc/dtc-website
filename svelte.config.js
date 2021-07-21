@@ -16,7 +16,6 @@ const config = {
 
 	kit: {
 		target: '#app',
-		paths: {base: "/dtc-website"},
         adapter: adapter({
             pages: 'docs',
             assets: 'docs',
