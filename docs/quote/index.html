@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap"
+        rel="stylesheet">
+    <title>Get a Quote - Dawson Technology Club</title>
+
+		
+
+		<link rel="modulepreload" href="/dtc-website/_app/start-a2a08690.js">
+		<link rel="modulepreload" href="/dtc-website/_app/chunks/vendor-2f7a998b.js">
+		<link rel="modulepreload" href="/dtc-website/_app/chunks/singletons-bb9012b7.js">
+		<link rel="modulepreload" href="/dtc-website/_app/pages/__layout.svelte-fd551ceb.js">
+		<link rel="modulepreload" href="/dtc-website/_app/chunks/links-1a771544.js">
+		<link rel="modulepreload" href="/dtc-website/_app/chunks/LinkButton-d31108c8.js">
+		<link rel="modulepreload" href="/dtc-website/_app/pages/quote.svelte-4b7e7909.js">
+		<link rel="modulepreload" href="/dtc-website/_app/chunks/services-eeb3c769.js">
+		<link rel="modulepreload" href="/dtc-website/_app/chunks/people-c7c3e1c6.js">
+		<link rel="modulepreload" href="/dtc-website/_app/chunks/Checkbox-22d98cfa.js">
+		<link rel="modulepreload" href="/dtc-website/_app/chunks/utils-3a7b53c0.js">
+		<link rel="stylesheet" href="/dtc-website/_app/assets/start-9aa571ba.css">
+		<link rel="stylesheet" href="/dtc-website/_app/assets/pages/__layout.svelte-2c13b87e.css">
+
+		<script type="module">
+			import { start } from "/dtc-website/_app/start-a2a08690.js";
+			start({
+				target: document.querySelector("#app"),
+				paths: {"base":"/dtc-website","assets":"/dtc-website"},
+				session: {},
+				host: location.host,
+				route: true,
+				spa: false,
+				trailing_slash: "never",
+				hydrate: {
+					status: 200,
+					error: null,
+					nodes: [
+						import("/dtc-website/_app/pages/__layout.svelte-fd551ceb.js"),
+						import("/dtc-website/_app/pages/quote.svelte-4b7e7909.js")
+					],
+					page: {
+						host: location.host, // TODO this is redundant
+						path: "/quote",
+						query: new URLSearchParams(""),
+						params: {}
+					}
+				}
+			});
+		</script>
+</head>
+
+<body class="dark:bg-gray-900 dark:text-gray-100">
+    <div id="app">
+
+
+
+
+<nav class="relative px-4 py-4 flex justify-between items-center bg-white"><a class="text-3xl font-bold leading-none" href="/"><div class="rounded h-8 w-8 bg-gradient-to-r from-blue-400 to-blue-500 overflow-visible shadow"><h3 class="text-white">dt<span class="text-blue-500">c</span></h3></div></a>
+	<div class="sm:hidden"><button class="navbar-burger flex items-center text-blue-600 p-3"><svg class="block h-4 w-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Mobile menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path></svg></button></div>
+	<ul class="hidden ml-9 sm:flex sm:items-center sm:w-auto sm:space-x-5"><li><a sveltekit:prefetch class="text-md text-gray-400 hover:text-gray-500" href="/about">About</a>
+	</li><li><a sveltekit:prefetch class="text-md text-gray-400 hover:text-gray-500" href="/services">Services</a>
+	</li><li><a sveltekit:prefetch class="text-md text-gray-400 hover:text-gray-500" href="/blog">Blog</a>
+	</li></ul>
+	<div class="hidden sm:inline-block sm:ml-auto sm:mr-3"><a sveltekit:prefetch class="shadow rounded transition duration-200 text-center inline-block mr-3 bg-gray-50 hover:bg-gray-100 text-gray-900 text-md py-3 px-8 font-bold" href="/join">Join Us</a>
+<a sveltekit:prefetch class="shadow rounded transition duration-200 text-center inline-block  bg-blue-500 hover:bg-blue-600 text-white text-sm py-2 px-6 font-bold" href="quote">Get a Quote</a></div></nav>
+
+<form><section class="p-9"><div class="md:grid md:grid-cols-3 md:gap-6"><div><h3 class="text-xl font-medium leading-6 text-gray-900"><div class="flex items-center">
+    <span class="font-medium">How can we reach you?</span></div></h3>
+	<p class="mt-3 text-gray-600">We need information to contact you when we have a quote ready.</p></div>
+<div class="mt-5 md:mt-0 md:col-span-2"><div class="shadow sm:rounded-md sm:overflow-hidden"><div class="px-4 py-5 bg-white space-y-6 sm:p-6"><div><div class="flex items-center">
+	<label for="contactName">Full name</label></div>
+
+<input required id="contactName" placeholder="Format: first name, last name" autocomplete="name" type="text" class="focus:ring-blue-500 focus:border-blue-500 flex-1 block w-full rounded sm:text-sm border-gray-300">
+</div><div><div class="flex items-center">
+	<label for="contactCompany">Company</label></div>
+
+<input required id="contactCompany" placeholder="Ex: Dawson Technology Club, LLC" autocomplete="company" type="text" class="focus:ring-blue-500 focus:border-blue-500 flex-1 block w-full rounded sm:text-sm border-gray-300">
+</div><div><div class="flex items-center">
+	<label for="contactEmail">Email address</label></div>
+
+<input required id="contactEmail" placeholder="Ex: name@domain.tld" autocomplete="email" type="email" class="focus:ring-blue-500 focus:border-blue-500 flex-1 block w-full rounded sm:text-sm border-gray-300">
+</div><div><div class="flex items-center"><input type="checkbox" class="form-checkbox h-6 w-6 rounded mr-2" id="contactUseTel">
+	<label for="contactUseTel">I wish to receive a phone call.</label></div>
+
+
+</div><div><div class="flex items-center"><input type="checkbox" class="form-checkbox h-6 w-6 rounded mr-2" id="contactNotMontreal">
+	<label for="contactNotMontreal">I am not in the Montreal Metropolitan Area.</label></div>
+
+
+</div></div></div></div></div></section><section class="p-9"><div class="md:grid md:grid-cols-3 md:gap-6"><div><h3 class="text-xl font-medium leading-6 text-gray-900"><div class="flex items-center">
+    <span class="font-medium">Your request</span></div></h3>
+	<p class="mt-3 text-gray-600">General information on your request and your expectations.</p></div>
+<div class="mt-5 md:mt-0 md:col-span-2"><div class="shadow sm:rounded-md sm:overflow-hidden"><div class="px-4 py-5 bg-white space-y-6 sm:p-6"><div><div class="flex items-center">
+	<label for="requestName">How should we name your request?</label></div>
+
+<input required id="requestName" placeholder="Ex: Super Cool E-Commerce Web Application" type="text" class="focus:ring-blue-500 focus:border-blue-500 flex-1 block w-full rounded sm:text-sm border-gray-300">
+<p class="mt-2 text-sm text-gray-500">The request name will be used to identify this request when handling many requests from the same company.</p></div><div><div class="flex items-center">
+	<label for="requestOverview">A brief overview of your request.</label></div>
+
+<textarea required id="requestOverview" class="focus:ring-blue-500 focus:border-blue-500 flex-1 block w-full rounded sm:text-sm border-gray-300" placeholder="Ex: E-Commerce Web Application with shopping cart and checkout functionality.">null</textarea>
+<p class="mt-2 text-sm text-gray-500">Summrize the key features of your request.</p></div><div><div class="flex items-center">
+	<label for="requestDeadline">When is the deadline for complete delivery?</label></div>
+
+<input required id="requestDeadline" placeholder="Ex: December 24, 2021" type="text" class="focus:ring-blue-500 focus:border-blue-500 flex-1 block w-full rounded sm:text-sm border-gray-300">
+<p class="mt-2 text-sm text-gray-500">Most DTC members are full-time students, so we may not be able to deliver in time depending on our workload.</p></div><div><div class="flex items-center">
+	<label for="requestPrice">How much should we charge?</label></div>
+
+<input required id="requestPrice" placeholder="CAD" type="number" class="focus:ring-blue-500 focus:border-blue-500 flex-1 block w-full rounded sm:text-sm border-gray-300">
+<p class="mt-2 text-sm text-gray-500">Please use CAD when calculating the amount.</p></div></div></div></div></div></section>
+
+	<section class="p-9"><div class="flex flex-col sm:flex-row sm:justify-end"><a sveltekit:prefetch class="shadow rounded transition duration-200 text-center inline-block sm:mr-2 mb-2 sm:mb-0 bg-gray-50 hover:bg-gray-100 text-gray-900 text-md py-3 px-8 font-bold" href="/services">Select more services</a>
+	<button class="shadow rounded transition duration-200 text-center  bg-blue-500 hover:bg-blue-600 text-white text-md py-3 px-8 font-bold">Send request</button></div>
+</section></form>
+<section class="bg-white"><div class="max-w-screen-xl px-4 py-12 mx-auto space-y-8 overflow-hidden sm:px-6 lg:px-8"><nav class="flex flex-wrap justify-center -mx-5 -my-2"><div class="px-5 py-2"><a sveltekit:prefetch href="/" class="text-base leading-6 text-gray-500 hover:text-gray-900">Home</a>
+		</div><div class="px-5 py-2"><a sveltekit:prefetch href="/about" class="text-base leading-6 text-gray-500 hover:text-gray-900">About</a>
+		</div><div class="px-5 py-2"><a sveltekit:prefetch href="/services" class="text-base leading-6 text-gray-500 hover:text-gray-900">Services</a>
+		</div><div class="px-5 py-2"><a sveltekit:prefetch href="/blog" class="text-base leading-6 text-gray-500 hover:text-gray-900">Blog</a>
+		</div></nav>
+<div class="flex justify-center mt-8 space-x-6"><a rel="external" href="/" class="text-gray-400 hover:text-gray-500"><span class="sr-only">Facebook</span>
+			
+		</a><a rel="external" href="/" class="text-gray-400 hover:text-gray-500"><span class="sr-only">Instagram</span>
+			
+		</a><a rel="external" href="/" class="text-gray-400 hover:text-gray-500"><span class="sr-only">Twitter</span>
+			
+		</a><a rel="external" href="/" class="text-gray-400 hover:text-gray-500"><span class="sr-only">GitHub</span>
+			
+		</a><a rel="external" href="/" class="text-gray-400 hover:text-gray-500"><span class="sr-only">Discord</span>
+			
+		</a></div>
+<p class="mt-8 text-base leading-6 text-center text-gray-400">© 2021 Dawson Technology Club, LLC. All rights reserved.</p></div></section>
+
+
+
+	
+</div>
+</body>
+
+</html>
