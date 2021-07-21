@@ -4,7 +4,7 @@ import { set_paths } from './runtime/paths.js';
 import { set_prerendering } from './runtime/env.js';
 import * as user_hooks from "./hooks.js";
 
-const template = ({ head, body }) => "<!DOCTYPE html>\n<html lang=\"en\">\n\n<head>\n    <meta charset=\"utf-8\" />\n    <link rel=\"icon\" href=\"/favicon.png\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n    <link href=\"https://fonts.googleapis.com/css2?family=Varela+Round&display=swap\"\n        rel=\"stylesheet\">\n    " + head + "\n</head>\n\n<body class=\"dark:bg-gray-900 dark:text-gray-100\">\n    <div id=\"app\">" + body + "</div>\n</body>\n\n</html>";
+const template = ({ head, body }) => "<!DOCTYPE html>\n<html lang=\"en\">\n\n<head>\n    <meta charset=\"utf-8\" />\n    <link rel=\"icon\" href=\"/favicon.png\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n    <link href=\"https://fonts.googleapis.com/css2?family=Varela+Round&display=swap\"\n        rel=\"stylesheet\">\n    " + head + "\n</head>\n\n<body class=\"dark:bg-gray-900 dark:text-gray-100\">\n    <div id=\"app\">" + body + "</div>\n</body>\n\n<!-- Hotjar Tracking Code for dtc.weis.studio -->\n<script>\n    (function(h,o,t,j,a,r){\n        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};\n        h._hjSettings={hjid:2514524,hjsv:6};\n        a=o.getElementsByTagName('head')[0];\n        r=o.createElement('script');r.async=1;\n        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;\n        a.appendChild(r);\n    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');\n</script>\n\n</html>";
 
 let options = null;
 
@@ -56,7 +56,7 @@ const d = decodeURIComponent;
 const empty = () => ({});
 
 const manifest = {
-	assets: [{"file":"favicon.png","size":1571,"type":"image/png"},{"file":"hero-dots.svg","size":20718,"type":"image/svg+xml"},{"file":"hero-image.jpg","size":317203,"type":"image/jpeg"}],
+	assets: [{"file":"favicon.png","size":21486,"type":"image/png"},{"file":"hero-dots.svg","size":20718,"type":"image/svg+xml"},{"file":"hero-image.jpg","size":317203,"type":"image/jpeg"}],
 	layout: "src/routes/__layout.svelte",
 	error: ".svelte-kit/build/components/error.svelte",
 	routes: [
